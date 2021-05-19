@@ -12,7 +12,7 @@ tpowerDT[, dateTime:=as.POSIXct(paste(Date, Time), format="%d/%m/%Y %H:%M:%S")]
 # Subset the DT for dates between 2007-02-01 and 2007-02-02
 spowerDT <- tpowerDT[(dateTime >= "2007-02-01") & (dateTime <= "2007-02-03")]
 
-# Set up the graphics device for 480x480 pixels with a title plot1.png
+# Set up the graphics device for 480x480 pixels with a file name plot2.png
 png("plot2.png", width = 480, height = 480)
 
 # Plot the graph from the subset

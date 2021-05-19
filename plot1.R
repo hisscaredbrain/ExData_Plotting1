@@ -12,7 +12,7 @@ tpowerDT[, Date:=lapply(.SD, as.Date, "%d/%m/%Y"), .SDcols=c("Date")]
 # Subset the DT for dates between 2007-02-01 and 2007-02-02
 spowerDT <- tpowerDT[(Date >= "2007-02-01") & (Date <= "2007-02-02")]
 
-# Set up the graphics device for 480x480 pixels with a title plot1.png
+# Set up the graphics device for 480x480 pixels with a file name plot1.png
 png("plot1.png", width = 480, height = 480)
 
 # Plot the histogram from the subset
